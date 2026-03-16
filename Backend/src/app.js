@@ -10,6 +10,13 @@ app.use(cors({
     origin: ['https://prep-ai-ynte.vercel.app', "http://localhost:5173"],
     credentials: true
 }))
+app.use(cors({...}))
+app.set('trust proxy', 1)
+res.cookie('token', token, {
+  httpOnly: true,
+  secure: true,       // must be true in production
+  sameSite: 'none',   // must be 'none' for cross-domain
+})
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes")
