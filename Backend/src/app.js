@@ -10,7 +10,6 @@ app.use(cors({
     origin: ['https://prep-ai-ynte.vercel.app', "http://localhost:5173"],
     credentials: true
 }))
-app.use(cors({...}))
 app.set('trust proxy', 1)
 res.cookie('token', token, {
   httpOnly: true,
