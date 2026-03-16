@@ -1,0 +1,61 @@
+/* ── Apple Spinner ─────────────────────────────────────────────── */
+.apple-spinner {
+  position: relative;
+  display: inline-block;
+  width: var(--sz, 28px);
+  height: var(--sz, 28px);
+  flex-shrink: 0;
+
+  &__blade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8%;
+    height: 25%;
+    margin-left: -4%;
+    border-radius: 99px;
+    background: var(--clr, var(--text-2));
+    transform-origin: center 120%;
+    animation: apple-blade 1.2s linear infinite;
+    opacity: 0;
+  }
+}
+
+@keyframes apple-blade {
+  0%   { opacity: 0.85; }
+  100% { opacity: 0.08; }
+}
+
+/* ── Full-page loader ──────────────────────────────────────────── */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: var(--black);
+  animation: fadeIn 0.3s ease;
+
+  &__msg {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--text-3);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* ── Button spinner ────────────────────────────────────────────── */
+.btn-spinner {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}

@@ -1,0 +1,49 @@
+.apple-loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg, #0a0a0f);
+    z-index: 9999;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__spinner {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__blade {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2.5px;
+        height: 9px;
+        margin-left: -1.25px;
+        border-radius: 2px;
+        background: var(--text-primary, #fff);
+        transform-origin: center 130%;
+        animation: apple-fade 1.2s linear infinite;
+        opacity: 0;
+    }
+
+    &__message {
+        font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: var(--text-secondary, rgba(255,255,255,0.45));
+    }
+}
+
+@keyframes apple-fade {
+    0%   { opacity: 1; }
+    100% { opacity: 0.1; }
+}
