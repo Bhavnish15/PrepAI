@@ -11,11 +11,7 @@ app.use(cors({
     credentials: true
 }))
 app.set('trust proxy', 1)
-app.cookie('token', token, {
-  httpOnly: true,
-  secure: true,       // must be true in production
-  sameSite: 'none',   // must be 'none' for cross-domain
-})
+
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes")
