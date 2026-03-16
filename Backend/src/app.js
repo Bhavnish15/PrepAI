@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: ["https://prepai-945k.onrender.com", "http://localhost:5173"],
+    origin: ['https://prep-ai-ynte.vercel.app', "http://localhost:5173"],
     credentials: true
 }))
 
