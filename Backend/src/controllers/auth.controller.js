@@ -48,9 +48,6 @@ async function registerUserController(req, res) {
         sameSite: 'none',    // must be 'none' for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000  // 7 days
     })
-    
-
-    res.cookie("token", token)
 
 
     res.status(201).json({
@@ -102,8 +99,7 @@ async function loginUserController(req, res) {
         sameSite: 'none',    // must be 'none' for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000  // 7 days
     })
-
-    res.cookie("token", token)
+    
     res.status(200).json({
         message: "User loggedIn successfully.",
         user: {
