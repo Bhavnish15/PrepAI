@@ -250,16 +250,16 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 💬 Support & Questions
 
-- 📧 Email: [your-email@example.com]
-- 🐦 Twitter: [@yourhandle]
-- 💼 LinkedIn: [your-linkedin]
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/prepai/issues)
+- 📧 Email: badal.bhavnish123@gmail.com
+- 🐦 Twitter: https://x.com/mr_bhavnish
+- 💼 LinkedIn: https://www.linkedin.com/in/bhavnishbhardwaj/
+- 🐛 Issues: https://github.com/yourusername/prepai/issues
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Bhavnish Bhardwaj**
 
 [⬆ Back to top](#prepai)
 
